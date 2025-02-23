@@ -1,7 +1,6 @@
 "use client";
 import { Box, Button, Container, Typography } from "@mui/material";
 import Image from "next/image";
-import bgImage from "../../../public/images/homepage.jpg";
 import CallMadeIcon from "@mui/icons-material/CallMade";
 
 export const Hero = () => {
@@ -20,7 +19,7 @@ export const Hero = () => {
             }}
         >
             <Image
-                src={bgImage}
+                src={"/images/corollaBanner.png"}
                 alt="Background"
                 layout="fill"
                 objectFit="cover"

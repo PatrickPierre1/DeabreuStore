@@ -5,7 +5,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../../public/images/logo2.png";
+import logo from "../../../public/images/logo3.png";
 
 export const Header = () => {
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -43,7 +43,7 @@ export const Header = () => {
                         </Box>
 
                         <Box sx={{ position: "absolute", left: "50%", transform: "translateX(-50%)" }}>
-                            <Image src={logo} alt="Logo" width={180} height={180} />
+                            <Image src={logo} alt="Logo" width={200} height={200} />
                         </Box>
 
                         <Box sx={{ display: "flex", alignItems: "center" }}>

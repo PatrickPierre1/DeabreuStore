@@ -48,9 +48,23 @@ export default function VehicleDetails() {
             <Box sx={{ backgroundColor: "#212121" }}>
                 {vehicle && (
                     <Box padding={10} paddingTop={15}>
-                        <Box display={"flex"} justifyContent={"center"} alignItems={"center"} flexDirection={"column"}>
-                            <Typography fontWeight={"bold"} color="white" variant="h4">{vehicle.name}</Typography>
-                            <Typography fontWeight={"bold"} color="white" variant="h6">{vehicle.marca}</Typography>
+                        <Box display={"flex"} justifyContent={"center"} alignItems={"start"} flexDirection={"column"}>
+                            <Box sx={{
+                                width: "20vw",
+                                height: "3px",
+                                backgroundColor: "#e0c000",
+                                marginBottom: "10px",
+                                borderRadius: "100%"
+                            }}></Box>
+                            <Typography fontWeight={"bold"} color={"#e0c000"} variant="h4">{vehicle.name}</Typography>
+                            <Typography fontWeight={"bold"} color={"#fff"} variant="h6">{vehicle.marca}</Typography>
+                            <Box sx={{
+                                width: "20vw",
+                                height: "3px",
+                                backgroundColor: "#e0c000",
+                                marginTop: "10px",
+                                borderRadius: "100%"
+                            }}></Box>
                         </Box>
                         <Grid container spacing={3} mt={2}>
                             <Grid size={{ xs: 12, sm: 6, md: 7 }}>
